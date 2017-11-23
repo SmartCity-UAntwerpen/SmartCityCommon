@@ -23,6 +23,15 @@ public class Point
     private String rfid;
     private int pointLock;
 
+    public Point() {}
+
+    public Point(Long id, int x, int y, String type)
+    {
+        this.id = id;
+        this.xCoord = x;
+        this.yCoord = y;
+        this.type = type;
+    }
     @Id
     @Column(name = "pid")
     //    @Column(name = "idpoint") //RBackend

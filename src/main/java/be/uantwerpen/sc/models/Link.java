@@ -1,4 +1,4 @@
-package be.uantwerpen.sc.models.links;
+package be.uantwerpen.sc.models;
 
 import be.uantwerpen.sc.models.points.Point;
 

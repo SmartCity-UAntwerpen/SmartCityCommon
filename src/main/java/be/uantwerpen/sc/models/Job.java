@@ -12,13 +12,13 @@ public class Job
     private long jobId;
 
     /**
-     * Start ID of Point(?)
+     * ID of the start waypoint
      * TODO: Jobs are more variable than this
      */
     private long idStart;
 
     /**
-     * End ID of Point(?)
+     * ID of the end  waypoint
      * TODO: Jobs are more variable than this
      */
     private long idEnd;
@@ -30,6 +30,10 @@ public class Job
 
     //Copied from RCore
     private String jobDescription;
+
+//MAAS
+    private String typeVehicle;
+    private String Status;
     /**
      * Default Constructor
      * TODO Better
@@ -55,7 +59,20 @@ public class Job
         this.jobId = jobId;
         this.jobDescription=jobDescription;
     }
-
+    /**
+     * Model that describes a job request.
+     *
+     * @param jobId ID of the job
+     * @param idStart ID of the start waypoint of the route
+     * @param idEnd ID of the end waypoint of the route
+     * @param idVehicle ID of the vehicle
+     */
+    public Job(Long jobId, Long idStart, Long idEnd, Long idVehicle) {
+        this.jobId = jobId;
+        this.idStart = idStart;
+        this.idEnd = idEnd;
+        this.idVehicle = idVehicle;
+    }
     /**
      * Get Job ID
      * @return ID of Job
@@ -86,7 +103,7 @@ public class Job
         this.jobDescription = jobDescription;
     }
     /**
-     * Get Start Point ID
+     * Get Start waypoint ID
      * @return Start Point ID
      */
     public Long getIdStart()
@@ -95,7 +112,7 @@ public class Job
     }
 
     /**
-     * Set Start Point ID
+     * Set Start waypoint ID
      * @param idStart Start Point ID
      */
     public void setIdStart(Long idStart)
@@ -104,7 +121,7 @@ public class Job
     }
 
     /**
-     * Get End Point ID
+     * Get End waypoint ID
      * @return End Point ID
      */
     public Long getIdEnd()
@@ -113,7 +130,7 @@ public class Job
     }
 
     /**
-     * Set End Point ID
+     * Set End waypoint ID
      * @param idEnd End Point ID
      */
     public void setIdEnd(Long idEnd)
@@ -137,6 +154,21 @@ public class Job
     public void setIdVehicle(Long idVehicle)
     {
         this.idVehicle = idVehicle;
+    }
+    //MAAS
+    public String getTypeVehicle() {
+        return typeVehicle;
+    }
+    public void setTypeVehicle(String typeVehicle) {
+        this.typeVehicle = typeVehicle;
+    }
+
+    //MAAS
+    public String getStatus() {
+        return Status;
+    }
+    public void setStatus(String status) {
+        Status = status;
     }
 
     @Override

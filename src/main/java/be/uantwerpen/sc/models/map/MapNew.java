@@ -1,6 +1,6 @@
 package be.uantwerpen.sc.models.map;
 
-import be.uantwerpen.sc.models.links.Link;
+import be.uantwerpen.sc.models.Link;
 import be.uantwerpen.sc.models.points.Point;
 import be.uantwerpen.sc.tools.pathplanning.AbstractMap;
 
