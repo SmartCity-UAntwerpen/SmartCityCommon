@@ -16,4 +16,4 @@ Please contact me in case of problems.
 </dependency>
 ```
 6. Import maven changes
-7. Remove models & tools folder, and make sure the missing imports are changed to those of the maven library.
+7. Remove shared files from models & tools folder, and make sure the missing imports are changed to those of the new maven library.
