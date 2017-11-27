@@ -1,5 +1,6 @@
 package be.uantwerpen.sc.models;
 
+import be.uantwerpen.sc.models.links.Link;
 import be.uantwerpen.sc.models.points.Point;
 
 import javax.persistence.*;

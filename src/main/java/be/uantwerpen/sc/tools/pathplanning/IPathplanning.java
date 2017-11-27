@@ -1,6 +1,6 @@
 package be.uantwerpen.sc.tools.pathplanning;
 
-import be.uantwerpen.sc.models.Link;
+import be.uantwerpen.sc.models.links.Link;
 import be.uantwerpen.sc.models.map.Map;
 import be.uantwerpen.sc.tools.Vertex;
 

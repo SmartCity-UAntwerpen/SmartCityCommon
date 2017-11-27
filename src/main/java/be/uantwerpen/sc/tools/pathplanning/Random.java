@@ -2,7 +2,7 @@ package be.uantwerpen.sc.tools.pathplanning;
 
 import be.uantwerpen.sc.models.map.Map;
 import be.uantwerpen.sc.tools.Vertex;
-import be.uantwerpen.sc.models.Link;
+import be.uantwerpen.sc.models.links.Link;
 
 import java.util.List;
 
