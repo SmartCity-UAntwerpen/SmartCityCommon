@@ -1,6 +1,4 @@
 # SmartCityCommon
-Warning: Currently only imported from RobotBackend, RobotCore and the Backbone. Files may be incorrect/missing.
-Please contact me in case of problems.
 
 ## How To Install
 1. Open this repository in IntelliJ
