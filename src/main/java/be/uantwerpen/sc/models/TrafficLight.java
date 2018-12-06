@@ -11,7 +11,7 @@ import javax.persistence.*;
 
 @Entity
 @DiscriminatorValue("light")
-@Table(name = "tlights", schema = "", catalog = "\"robotDB\"") //RBackend
+@Table(name = "trafficlight", schema = "", catalog = "\"robotDB\"") //RBackend
 //Completely implemented in RBackend
 public class TrafficLight
 {
@@ -24,7 +24,8 @@ public class TrafficLight
     private String state;
     private Link link;
     //RCore
-    private Point pointid;
+//    @ElementCollection(targetClass=Point.class)
+    private int pointid;
 
     @Id
     @Column(name = "\"idtlight\"")
@@ -63,12 +64,12 @@ public class TrafficLight
         this.state = state;
     }
     //RCore
-    public Point getPointid() {
+    public int getPointid() {
         return pointid;
     }
 
     //Rcore
-    public void setPointid(Point pointid) {
+    public void setPointid(int pointid) {
         this.pointid = pointid;
     }
     @Override
@@ -99,7 +100,7 @@ public class TrafficLight
 
 
     @OneToOne
-    @JoinColumn(name = "\"link\"", referencedColumnName = "idlink")
+    @JoinColumn(name = "\"link\"", referencedColumnName = "lid")
     public Link getLink()
     {
         return link;

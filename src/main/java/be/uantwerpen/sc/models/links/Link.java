@@ -33,7 +33,7 @@ public class Link
 
     @Id
     @Column(name = "lid")
-    //    @Column(name = "idlink")
+//    @Column(name = "idlink")
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long getId()
     {
