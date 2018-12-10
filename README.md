@@ -25,7 +25,7 @@
 6. Import maven changes
 7. (Remove shared files from models & tools folder, and make sure the missing imports are changed to those of the new maven library.)
 
-##How to edit the common files
+## How to edit the common files 
 0. Make your changes
 1. Edit the maven file to change version number (if necessary)
 2. Create settings file with GitHub credentials (Windows: C:\Users\_name_\.m2\settings.xml)
@@ -44,11 +44,11 @@
 	
 </settings>
 ```
-3. Run mvn deploy target to upload to the repository
+3. Run mvn deploy target to upload to the repository  
 
 (Tip: Make sure you added your full name to your github profile)
 
 
-###Background
-The compiled JARs are saved in the mvn-branch.
+### Background 
+The compiled JARs are saved in the mvn-branch.  
 Inspiration for this setup: https://stackoverflow.com/questions/14013644/hosting-a-maven-repository-on-github
