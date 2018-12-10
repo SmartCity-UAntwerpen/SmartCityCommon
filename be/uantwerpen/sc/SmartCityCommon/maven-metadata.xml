@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>be.uantwerpen.sc</groupId>
+  <artifactId>SmartCityCommon</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.2-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20181210142913</lastUpdated>
+  </versioning>
+</metadata>
