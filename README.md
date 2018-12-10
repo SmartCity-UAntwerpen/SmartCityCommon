@@ -47,3 +47,8 @@
 3. Run mvn deploy target to upload to the repository
 
 (Tip: Make sure you added your full name to your github profile)
+
+
+###Background
+The compiled JARs are saved in the mvn-branch.
+Inspiration for this setup: https://stackoverflow.com/questions/14013644/hosting-a-maven-repository-on-github

@@ -131,6 +131,7 @@
                     <includes><include>**/*</include></includes>
                     <repositoryName>SmartCityCommon</repositoryName>      <!-- github repo name -->
                     <repositoryOwner>SmartCity-UAntwerpen</repositoryOwner>    <!-- github username  -->
+                    <merge>true</merge>
                 </configuration>
                 <executions>
                     <execution>
