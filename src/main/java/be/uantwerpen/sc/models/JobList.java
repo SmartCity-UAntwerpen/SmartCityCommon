@@ -1,9 +1,6 @@
 package be.uantwerpen.sc.models;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,13 +10,10 @@ import java.util.List;
 @Entity
 public class JobList extends MyAbstractPersistable<Long>{
 
-    @OneToMany
+    @OneToMany(cascade= CascadeType.ALL)
     @JoinColumn(name="ID_ORDER", referencedColumnName="ID")
     private List<Job> jobs;
-    @Column(name="SP", unique = false, nullable = false)
-    private long startPoint;
-    @Column(name = "EP", unique = false, nullable = false)
-    private long endPoint;
+
     @Column(name = "idDelivery", unique = false, nullable = false)
     private String idDelivery;
 
@@ -30,8 +24,6 @@ public class JobList extends MyAbstractPersistable<Long>{
 
     public JobList() {
         this.jobs = new ArrayList<Job>();
-        this.startPoint = -1;
-        this.endPoint = -1;
         this.idDelivery = "-1";
     }
 
@@ -40,7 +32,7 @@ public class JobList extends MyAbstractPersistable<Long>{
     }
 
     public boolean isEmpty() {
-        if (jobs.isEmpty() == true){
+        if (jobs.isEmpty()){
             return true;
         }
         else {
@@ -57,22 +49,6 @@ public class JobList extends MyAbstractPersistable<Long>{
 
     public void setJobs(List<Job> jobs) {
         this.jobs = jobs;
-    }
-
-    public long getStartPoint() {
-        return startPoint;
-    }
-
-    public void setStartPoint(long startPoint) {
-        this.startPoint = startPoint;
-    }
-
-    public long getEndPoint() {
-        return endPoint;
-    }
-
-    public void setEndPoint(long endPoint) {
-        this.endPoint = endPoint;
     }
 
     public String getIdDelivery() {

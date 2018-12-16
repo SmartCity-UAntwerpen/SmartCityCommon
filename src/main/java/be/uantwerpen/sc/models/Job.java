@@ -14,26 +14,27 @@ import static javax.persistence.GenerationType.IDENTITY;
 
 public class Job extends MyAbstractPersistable<Long> {
 
-
     private long idStart;
     private long idEnd;
-    private long idVehicle;
-    private String typeVehicle;
-    private String Status;
+    /**
+     * Start en einde zijn steeds in dezelfde map
+     */
+    private int idMap;
+    private String status;
 
     public Job() {
 
     }
 
-
-    public Job(Long idStart, Long idEnd, Long idVehicle) {
+    public Job(Long idStart, Long idEnd, int idMap) {
         this.idStart = idStart;
         this.idEnd = idEnd;
-        this.idVehicle = idVehicle;
+        this.idMap = idMap;
+        this.status = "TODO";
     }
 
     public String toString(){
-        return "[ start: "+idStart+" - end:"+idEnd+" ] vehicle:" + idVehicle;
+        return "[ start: "+idStart+" - end:"+idEnd+" ] map:" + idMap;
     }
 
     public long getIdStart() {
@@ -52,28 +53,20 @@ public class Job extends MyAbstractPersistable<Long> {
         this.idEnd = idEnd;
     }
 
-    public long getIdVehicle() {
-        return idVehicle;
+    public int getIdMap() {
+        return idMap;
     }
 
-    public void setIdVehicle(long idVehicle) {
-        this.idVehicle = idVehicle;
-    }
-
-    public String getTypeVehicle() {
-        return typeVehicle;
-    }
-
-    public void setTypeVehicle(String typeVehicle) {
-        this.typeVehicle = typeVehicle;
+    public void setIdMap(int idMap) {
+        this.idMap = idMap;
     }
 
     public String getStatus() {
-        return Status;
+        return status;
     }
 
     public void setStatus(String status) {
-        Status = status;
+        this.status = status;
     }
 
 }
