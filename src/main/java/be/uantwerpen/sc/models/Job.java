@@ -24,7 +24,7 @@ public class Job extends MyAbstractPersistable<Long> {
      * Start en einde zijn steeds in dezelfde map
      */
     private int idMap;
-    private String status;
+    private JobState status;
 
     public Job() {
 
@@ -34,7 +34,7 @@ public class Job extends MyAbstractPersistable<Long> {
         this.idStart = idStart;
         this.idEnd = idEnd;
         this.idMap = idMap;
-        this.status = "TODO";
+        this.status = JobState.TODO;
     }
 
     public String toString(){
@@ -65,11 +65,11 @@ public class Job extends MyAbstractPersistable<Long> {
         this.idMap = idMap;
     }
 
-    public String getStatus() {
+    public JobState getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(JobState status) {
         this.status = status;
     }
 
