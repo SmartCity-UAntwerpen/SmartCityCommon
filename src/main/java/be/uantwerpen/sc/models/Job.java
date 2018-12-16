@@ -14,6 +14,10 @@ import static javax.persistence.GenerationType.IDENTITY;
 
 public class Job extends MyAbstractPersistable<Long> {
 
+    @ManyToOne(fetch =FetchType.LAZY)
+    @JoinColumn(name = "ID_ORDER")
+    private JobList jobList;
+
     private long idStart;
     private long idEnd;
     /**
@@ -69,4 +73,11 @@ public class Job extends MyAbstractPersistable<Long> {
         this.status = status;
     }
 
+    public JobList getJobList() {
+        return jobList;
+    }
+
+    public void setJobList(JobList jobList) {
+        this.jobList = jobList;
+    }
 }
