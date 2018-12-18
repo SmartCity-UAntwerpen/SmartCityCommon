@@ -34,7 +34,7 @@ public class Job extends MyAbstractPersistable<Long> {
     }
 
     public String toString(){
-        return "[ start: "+idStart+" - end:"+idEnd+" ] map:" + idMap;
+        return "[ start: "+idStart+" - end:"+idEnd+" ] map:" + idMap + ", state: "+status;
     }
 
     public long getIdStart() {
