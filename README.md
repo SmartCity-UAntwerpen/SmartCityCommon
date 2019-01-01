@@ -28,7 +28,7 @@
 ## How to edit the common files 
 0. Make your changes
 1. Edit the maven file to change version number (if necessary)
-2. Create settings file with GitHub credentials (Windows: C:\Users\_name_\\.m2\settings.xml)
+2. Create settings file with GitHub credentials (Windows: C:\Users\\_name_\\.m2\settings.xml)
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
