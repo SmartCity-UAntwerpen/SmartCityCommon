@@ -7,6 +7,7 @@ import be.uantwerpen.sc.models.points.Point;
  * Created by Niels on 14/04/2016.
  */
 //RBackend
+    @Deprecated
 public class Neighbour {
 
     private Point pointEntity;

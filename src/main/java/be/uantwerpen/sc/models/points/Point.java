@@ -10,6 +10,7 @@ import javax.persistence.*;
 @Entity
 @Inheritance(strategy=InheritanceType.JOINED)
 @Table(name = "point", schema = "", catalog = "core")
+@Deprecated
 public class Point
 {
     private Long id;

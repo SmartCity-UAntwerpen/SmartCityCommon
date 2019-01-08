@@ -11,6 +11,7 @@ import java.util.List;
  *
  */
 //RBackend
+    @Deprecated
 public class MapNew implements AbstractMap
 {
     private List<Point> pointList;

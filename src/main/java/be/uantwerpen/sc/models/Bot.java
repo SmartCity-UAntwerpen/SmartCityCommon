@@ -16,6 +16,7 @@ import javax.persistence.*;
 @DiscriminatorColumn(name = "vehicle_type")
 @Table(name = "bot", schema = "", catalog = "core")
 //@Table(name = "robots", schema = "", catalog = "\"robotDB\"") RobotBackend
+@Deprecated
 public class Bot {
 
     private Long id;

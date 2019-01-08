@@ -12,6 +12,7 @@ import java.util.List;
 //TODO: Sarah Code
 //RCore
 @Component
+@Deprecated
 public class WorkingmodeType {
 
     private WorkingmodeEnum type;

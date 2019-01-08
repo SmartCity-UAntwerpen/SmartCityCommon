@@ -11,6 +11,7 @@ import java.util.List;
  * Map of the area
  * Data class
  */
+@Deprecated
 public class Map implements AbstractMap
 {
     /**

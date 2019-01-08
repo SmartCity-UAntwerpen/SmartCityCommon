@@ -11,6 +11,7 @@ import javax.persistence.Table;
 //Not in RBackend
 @Entity
 @Table(name="point_drone", schema = "", catalog = "core")
+@Deprecated
 public class PointDrone extends Point {
 
     private float x;

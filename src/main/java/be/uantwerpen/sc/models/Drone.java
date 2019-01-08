@@ -8,6 +8,7 @@ import javax.persistence.*;
 //Only implemented in backbone
 @Entity
 @DiscriminatorValue("drone")
+@Deprecated
 public class Drone extends Bot{
 
     private float x;

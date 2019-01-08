@@ -8,6 +8,7 @@ import javax.persistence.*;
 //Not implemented in backbone
 @Entity
 @DiscriminatorValue("car")
+@Deprecated
 public class Car extends Bot{
 
     private float x;

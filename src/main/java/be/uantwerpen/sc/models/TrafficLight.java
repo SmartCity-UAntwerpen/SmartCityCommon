@@ -13,6 +13,7 @@ import javax.persistence.*;
 @DiscriminatorValue("light")
 @Table(name = "trafficlight", schema = "", catalog = "\"robotDB\"") //RBackend
 //Completely implemented in RBackend
+@Deprecated
 public class TrafficLight
 {
     /**

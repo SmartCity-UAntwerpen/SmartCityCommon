@@ -8,6 +8,7 @@ import java.util.List;
  * Created by Niels on 14/04/2016.
  */
 //RBackend
+    @Deprecated
 public class NodeJson {
     private Point pointEntity;
     private List<Neighbour> neighbours;

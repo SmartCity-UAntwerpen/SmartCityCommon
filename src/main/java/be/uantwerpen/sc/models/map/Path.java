@@ -10,6 +10,7 @@ import java.util.List;
  * TODO WHAT DIS
  */
 //RBackend
+    @Deprecated
 public class Path {
 
     private List<Vertex> path;

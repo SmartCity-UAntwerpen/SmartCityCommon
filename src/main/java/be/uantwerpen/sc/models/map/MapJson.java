@@ -9,6 +9,7 @@ import java.util.List;
  * Created by Niels on 14/04/2016.
  */
 //RBackend
+@Deprecated
 public class MapJson implements AbstractMap
 {
     private List<NodeJson> nodeJsons;

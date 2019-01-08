@@ -3,6 +3,7 @@ package be.uantwerpen.sc.models.points;
 /**
  * Model that describes a coordinate on a map. Uses X and Y and quaternion in the Z and W.
  */
+@Deprecated
 public class PointCar extends Point{
 
     private float x = 0; // X offset from 0-point

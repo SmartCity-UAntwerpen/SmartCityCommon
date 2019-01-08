@@ -5,6 +5,7 @@ package be.uantwerpen.sc.tools;
  */
 //TODO: Sarah Code
 //RCore
+    @Deprecated
 public enum WorkingmodeEnum {
     INDEPENDENT,
     PARTIALSERVER,

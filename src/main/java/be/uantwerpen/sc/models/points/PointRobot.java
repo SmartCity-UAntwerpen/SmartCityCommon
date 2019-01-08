@@ -13,6 +13,7 @@ import javax.persistence.Table;
 //Not in RBackend
 @Entity
 @Table(name="point_robot", schema = "", catalog = "core")
+@Deprecated
 public class PointRobot extends Point {
 
     private String rfid; //These are also in Point, from RBackend
