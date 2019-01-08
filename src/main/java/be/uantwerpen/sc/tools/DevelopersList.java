@@ -10,6 +10,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.TreeMap;
 import java.util.List;
@@ -34,7 +35,7 @@ public class DevelopersList
 
         try
         {
-            File developersFile = new File(classLoader.getResource(DEVELOPERSLIST).toURI());
+            InputStream developersFile = classLoader.getResourceAsStream(DEVELOPERSLIST);
 
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
@@ -73,7 +74,7 @@ public class DevelopersList
 
         try
         {
-            File developersFile = new File(classLoader.getResource(DEVELOPERSLIST).toURI());
+            InputStream developersFile = classLoader.getResourceAsStream(DEVELOPERSLIST);
 
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
