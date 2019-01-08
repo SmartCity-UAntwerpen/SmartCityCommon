@@ -100,5 +100,43 @@
                 <name>Vincent Nys</name>
             </person>
         </group>
+        <group year="2018-2019">
+            <person>
+                <name>Dieter Balemans</name>
+            </person>
+            <person>
+                <name>Niels Balemans</name>
+            </person>
+            <person>
+                <name>Thomas Cassimon</name>
+            </person>
+            <person>
+                <name>Aleksander Chernyavskiy</name>
+            </person>
+            <person>
+                <name>Ruben De Swaef</name>
+            </person>
+            <person>
+                <name>Stijn Dirickx</name>
+            </person>
+            <person>
+                <name>Vadim Gouskov</name>
+            </person>
+            <person>
+                <name>Imre Liessens</name>
+            </person>
+            <person>
+                <name>Raf Van Den Langenbergh</name>
+            </person>
+            <person>
+                <name>Astrid Vanneste</name>
+            </person>
+            <person>
+                <name>Jamie Wubben</name>
+            </person>
+            <person>
+                <name>Yunus Yigit</name>
+            </person>
+        </group>
     </students>
 </developers>
